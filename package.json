@@ -1,0 +1,16 @@
+{
+  "name": "leadsync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon --watch main.js --input=file.csv --output=report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9",
+    "yargs": "^17.7.2"
+  }
+}
