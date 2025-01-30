@@ -1,16 +1,18 @@
 {
-  "name": "leadsync",
+  "name": "csv-sanitizer",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "vitest":"test",
-  
+  "vitest": "test",
   "scripts": {
-    "dev": "node --env-file=.env --watch main.js --input=companies.csv --output=report.csv"
+    "dev": "node --watch main.js --input=companies.csv --output=report.csv --report=error.csv"
+  },
+  "bin": {
+    "csv-sanitizer": "./main.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "csv-parse": "^5.6.0",
     "papaparse": "^5.5.1",
