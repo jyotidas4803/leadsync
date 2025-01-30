@@ -5,6 +5,10 @@
   "main": "main.js",
   "vitest": "test",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jyotidas4803/leadsync"
+  },
   "scripts": {
     "dev": "node --watch main.js --input=companies.csv --output=report.csv --report=error.csv"
   },
